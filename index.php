@@ -107,6 +107,8 @@
 							<p>Used space : <?php echo $file->used_space(); ?></b></p>
 							<p>Download folder : <?php echo $file->get_downloads_folder(); ?></p>
 							<p>Youtube-dl version : <?php echo Downloader::get_youtubedl_version(); ?></p>
+							<p>Original Project: https://github.com/timendum/Youtube-dl-WebUI</p>
+							<p>notch1p's version: https://github.com/notch1p/Youtube-dl-WebUI</p>
 						</div>
 					</div>
 				</div>
