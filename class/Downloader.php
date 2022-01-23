@@ -272,7 +272,7 @@ class Downloader
 	private function do_download($audio_only)
 	{
 		$cmd = $this->config["bin"];
-		$cmd .= " --ignore-error -o ".$this->download_path."/";
+		$cmd .= " --ignore-error --merge-output-format mkv -o ".$this->download_path."/";
 		$cmd .= escapeshellarg($this->outfilename);
 		
 		if ($this->vformat) 
