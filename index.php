@@ -107,8 +107,8 @@
 							<p>Used space : <?php echo $file->used_space(); ?></b></p>
 							<p>Download folder : <?php echo $file->get_downloads_folder(); ?></p>
 							<p>Youtube-dl version : <?php echo Downloader::get_youtubedl_version(); ?></p>
-							<p>Original Project: https://github.com/timendum/Youtube-dl-WebUI</p>
-							<p>notch1p's version: https://github.com/notch1p/Youtube-dl-WebUI</p>
+							<p>Original Project: <a href="https://github.com/timendum/Youtube-dl-WebUI">Github</a></p>
+							<p>notch1p's version: <a href="https://github.com/notch1p/Youtube-dl-WebUI">Github</a></p>
 						</div>
 					</div>
 				</div>
@@ -124,6 +124,7 @@
 							<p>Go to <a href="./list.php">List of files</a> -> choose one -> right click on the link -> "Save target as ..." </p>
 							<p><b>What's Filename or Format field?</b></p>
 							<p>They are optional, see the official documentation about <a href="https://github.com/ytdl-org/youtube-dl/blob/master/README.md#format-selection">Format selection</a> or <a href="https://github.com/ytdl-org/youtube-dl/blob/master/README.md#output-template">Output template</a> </p>
+							<p style="color:crimson">Always use <code>bestvideo+bestaudio</code> for formatting option.</p>
 						</div>
 					</div>
 				</div>
