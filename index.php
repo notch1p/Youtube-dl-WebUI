@@ -109,6 +109,7 @@
 							<p>Youtube-dl version : <?php echo Downloader::get_youtubedl_version(); ?></p>
 							<p>Original Project: <a href="https://github.com/timendum/Youtube-dl-WebUI">Github</a></p>
 							<p>notch1p's version: <a href="https://github.com/notch1p/Youtube-dl-WebUI">Github</a></p>
+							<p>Be sure to star!</p>
 						</div>
 					</div>
 				</div>
