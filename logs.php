@@ -9,6 +9,7 @@
 	if(!$session->is_logged_in())
 	{
 		header("Location: login.php");
+		exit;
 	}
 
 	$files = $file->listLogs();
@@ -21,12 +22,12 @@
 
 	require 'views/header.php';
 ?>
-		<div class="container">
+		<div class="container my-4">
 		<?php
 			if(!empty($files))
 			{
 		?>
-			<h2>List of logs:</h2>
+			<h1>List of logs:</h1>
 			<table class="table table-striped table-hover ">
 				<thead>
 					<tr>
@@ -70,7 +71,7 @@
 			}
 		?>
 			<br/>
-		</div><!-- End container -->
+		</div>
 <?php
 	require 'views/footer.php';
 ?>

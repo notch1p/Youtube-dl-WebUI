@@ -10,6 +10,7 @@
 		if($session->login($_POST["password"]))
 		{
 			header("Location: index.php");
+			exit;
 		}
 		else
 		{
@@ -19,7 +20,7 @@
 ?>
 
 <?php require 'views/header.php'; ?>
-<div class="container">
+<div class="container my-4">
 	<?php
 		if($loginError !== "")
 		{
@@ -28,28 +29,26 @@
 	<?php
 		}
 	?>
-	<div class="row">
-		<div class="col-md-4"></div>
-		<div class="col-md-4">
-			<h2>Login :</h2>
+	<form class="form-horizontal" action="login.php" method="POST" data-bitwarden-watching="1">
+		<div class="row my-3 justify-content-md-center">
+			<div class="col col-md-4">
+				<h2>Login</h2>
+			</div>
 		</div>
-		<div class="col-md-4"></div>
-	</div>
-	<form class="form-horizontal" action="login.php" method="POST">
-		<div class="form-group">
-			<div class="col-lg-4"></div>
-				<div class="col-lg-4">
+		<div class="row my-3 justify-content-md-center">
+			<div class="col col-lg-4 ">
+				<div class="input-group">
 					<input class="form-control" id="password" name="password" placeholder="Password" type="password">
 				</div>
-			<div class="col-lg-4"></div>
-		</div>
-		<div class="form-group">
-			<div class="col-lg-4"></div>
-			<div class="col-lg-4">
-				<button type="submit" class="btn btn-primary">Sign in</button>
 			</div>
-		<div class="col-lg-4"></div>
+		</div>
+		<div class="row my-3 justify-content-md-center">
+			<div class="col col-lg-4">
+				<div class="input-group">
+					<button type="submit" class="btn btn-primary">Sign in</button>
+				</div>
+			</div>
 		</div>
 	</form>
-</div><!-- End container -->
+</div>
 <?php require 'views/footer.php'; ?>
